@@ -1,5 +1,6 @@
 import 'package:anime_app/core/constants/app_images.dart';
-import 'package:anime_app/features/data/models/anime_model.dart';
+import 'package:anime_app/features/home/data/models/anime_model.dart';
+import 'package:anime_app/features/home/screens/pages/details_screen.dart';
 import 'package:anime_app/features/home/screens/widgets/anime_card_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -36,11 +37,21 @@ class AnimeListView extends StatelessWidget {
         itemCount: animes.length,
         itemBuilder: (context, index) {
           final anime = animes[index];
-          return AnimeCardWidget(
-            image: anime.image,
-            title: anime.title,
-            genre: anime.genre,
-            rating: anime.rating,
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AnimeDetailsScreen(),
+                ),
+              );
+            },
+            child: AnimeCardWidget(
+              image: anime.image,
+              title: anime.title,
+              genre: anime.genre,
+              rating: anime.rating,
+            ),
           );
         },
       ),

@@ -22,7 +22,6 @@ class AnimeCardWidget extends StatelessWidget {
       width: 170,
       margin: const EdgeInsets.only(right: 12),
       child: Column(
-        // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
             children: [

@@ -15,4 +15,5 @@ class AppColors {
   static const Color bottomNavColor = Color(0xffF9F8FD);
   static const Color orangColor = Color(0xff713649);
   static const Color grey272Color = Color(0xff747272);
+  static const Color purpuleAD8Color = Color(0xffA49AD8);
 }

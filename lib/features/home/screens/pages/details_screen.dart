@@ -5,6 +5,7 @@ import 'package:anime_app/core/constants/app_styles.dart';
 import 'package:anime_app/features/home/screens/widgets/anime_images_widget.dart';
 import 'package:anime_app/features/home/screens/widgets/anime_type_container.dart';
 import 'package:anime_app/features/home/screens/widgets/icon_and_text_row_widget.dart';
+import 'package:anime_app/features/upgrade%20plan/presentation/screens/pages/upgrade_plan_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -127,9 +128,19 @@ class AnimeDetailsScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(37),
                 color: AppColors.purple6F8Color,
               ),
-              child: IconAndTextRowWidget(
-                text: ' Watch Now',
-                icon: AppIcons.solidEyeIcon,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => UpgradePlanScreen(),
+                    ),
+                  );
+                },
+                child: IconAndTextRowWidget(
+                  text: ' Watch Now',
+                  icon: AppIcons.solidEyeIcon,
+                ),
               ),
             ),
           ],
