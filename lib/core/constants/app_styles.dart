@@ -92,15 +92,15 @@ abstract class AppStyles {
   }) {
     final double scaleFactor = getScaleFactor(context);
     final double responsiveSize = scaleFactor * fontSize;
-    final double lowerFont = fontSize * .8;
-    final double upperFont = fontSize * 1;
+    final double lowerFont = fontSize * 0.9;
+    final double upperFont = fontSize * 1.1;
     return responsiveSize.clamp(lowerFont, upperFont);
   }
 
   static double getScaleFactor(context) {
     final width = MediaQuery.sizeOf(context).width;
     if (width < 1300) {
-      return width / 1100;
+      return width / 900;
     } else {
       return width / 1500;
     }
