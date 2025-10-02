@@ -13,4 +13,6 @@ class AppColors {
   static const Color backgroundColor = Color(0xff2C1E51);
   static const Color starColor = Color(0xffD3D6FF);
   static const Color bottomNavColor = Color(0xffF9F8FD);
+  static const Color orangColor = Color(0xff713649);
+  static const Color grey272Color = Color(0xff747272);
 }

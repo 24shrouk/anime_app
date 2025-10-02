@@ -1,3 +1,5 @@
+import 'package:anime_app/features/data/models/anime_model.dart';
+import 'package:anime_app/features/home/screens/pages/details_screen.dart';
 import 'package:anime_app/features/home/screens/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +12,9 @@ class AnimeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: AnimeDetailsScreen(),
+    );
   }
 }

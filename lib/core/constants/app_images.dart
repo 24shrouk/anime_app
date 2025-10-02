@@ -11,4 +11,7 @@ abstract class AppImages {
   static const String rightStarImage = 'assets/images/right_star_image.png';
   static const String rocketImage = 'assets/images/rocket_image.png';
   static const String watchImage = 'assets/images/watch_image.png';
+  static const String animeImage = 'assets/images/anime.png';
+  static const String animeLogoImage = 'assets/images/anime_logo_image.png';
+  static const String backroundImage = 'assets/images/details_background.png';
 }
